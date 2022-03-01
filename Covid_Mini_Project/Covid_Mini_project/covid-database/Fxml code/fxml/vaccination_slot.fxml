@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="702.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covid_resource.Dashboard_Controller">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="702.0" prefWidth="1400.0" style="-fx-background-color: white;" styleClass="dashboard_back">
+            <children>
+                <AnchorPane prefHeight="702.0" prefWidth="239.0" style="-fx-background-color: #152238;">
+                    <children>
+                        <Button layoutX="11.0" layoutY="583.0" mnemonicParsing="false" onAction="#about_usOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="About Us">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="479.0" mnemonicParsing="false" onAction="#helplineOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Helpline Number">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="12.0" layoutY="375.0" mnemonicParsing="false" onAction="#articlesOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Articles/Blogs">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="271.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: #1cb2f5; -fx-background-radius: 0;" text="Vaccination Slot">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="167.0" mnemonicParsing="false" onAction="#dashboardOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Dashboard">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                        </Button>
+                  <Ellipse layoutX="119.0" layoutY="60.0" radiusX="100.0" radiusY="37.0" stroke="BLACK" strokeType="INSIDE">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#d33f3f" />
+                              <Stop color="#5d9bf0" offset="0.007518796992481203" />
+                              <Stop color="#a763eb" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Ellipse>
+                  <Label layoutX="50.0" layoutY="36.0" text="WEAR A MASK !">
+                     <font>
+                        <Font name="Verdana Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="28.0" fitWidth="81.0" layoutX="82.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/mask.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="239.0" prefHeight="702.0" prefWidth="1161.0" style="-fx-background-color: black;">
+                    <children>
+                  <ImageView fitHeight="653.0" fitWidth="1161.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/vacc_slot.jpg" />
+                     </image>
+                  </ImageView>
+                        <Separator orientation="VERTICAL" prefHeight="702.0" prefWidth="4.0" style="-fx-background-color: white;" />
+                  <Hyperlink layoutX="991.0" layoutY="548.0" onAction="#opencowinlink" text="Slot Booking">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Hyperlink>
+                    </children>
+                </AnchorPane>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

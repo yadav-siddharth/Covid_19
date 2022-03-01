@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covid_resource.Login_Controller">
+    <children>
+        <AnchorPane layoutX="623.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="537.0" prefWidth="445.0" style="-fx-background-color: black;">
+            <children>
+                <Label layoutX="99.0" layoutY="52.0" text="COVID  SECURE  LOGIN" textFill="WHITE" underline="true">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="username" layoutX="77.0" layoutY="165.0" prefHeight="40.0" prefWidth="302.0" promptText="Username" style="-fx-background-color: BLACK;" styleClass="textfield" stylesheets="@../style.css">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </TextField>
+                <Line endX="190.0" layoutX="191.0" layoutY="205.0" startX="-100.0" stroke="WHITE" />
+                <Line endX="190.0" layoutX="189.0" layoutY="305.0" startX="-100.0" stroke="WHITE" />
+                <PasswordField fx:id="password" layoutX="78.0" layoutY="263.0" prefHeight="23.0" prefWidth="301.0" promptText="Password" style="-fx-background-color: BLACK;" styleClass="textfield" stylesheets="@../style.css">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </PasswordField>
+                <Button layoutX="178.0" layoutY="390.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="40.0" prefWidth="94.0" style="-fx-background-color: white;" text="Login">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Button>
+                <Label layoutX="139.0" layoutY="481.0" prefHeight="25.0" prefWidth="112.0" text="Not A Member?  " textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Button layoutX="244.0" layoutY="478.0" mnemonicParsing="false" onAction="#signupOnAction" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: black;" text="Sign-Up !" textFill="WHITE" underline="true">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Button>
+                <ImageView fitHeight="50.0" fitWidth="48.0" layoutX="22.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/user_icon.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="24.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/pass_icon.jpg" />
+                    </image>
+                </ImageView>
+            <Label fx:id="login_status" layoutX="84.0" layoutY="332.0" prefHeight="33.0" prefWidth="282.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="538.0" fitWidth="622.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/covid_login.jpg" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

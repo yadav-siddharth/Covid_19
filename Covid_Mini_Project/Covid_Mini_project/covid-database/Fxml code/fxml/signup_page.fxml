@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="537.0" prefWidth="1068.0" style="-fx-background-color: black;" styleClass="signup_back" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covid_resource.Signup_Controller">
+   <children>
+      <AnchorPane layoutX="440.0" layoutY="43.0" prefHeight="450.0" prefWidth="530.0" style="-fx-background-color: white;" styleClass="registeration_form" stylesheets="@../style.css">
+         <children>
+            <Label layoutX="156.0" layoutY="14.0" prefHeight="30.0" prefWidth="235.0" text="REGISTERATION FORM" textAlignment="CENTER" textFill="#23395d">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="121.0" text="Full Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="f_name" layoutX="104.0" layoutY="119.0" prefHeight="27.0" prefWidth="120.0" promptText="First Name">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Label layoutX="14.0" layoutY="70.0" text="Username:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="104.0" layoutY="68.0" prefHeight="27.0" prefWidth="154.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Label layoutX="274.0" layoutY="70.0" text="Password:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="220.0" text="Email-id:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" layoutX="89.0" layoutY="218.0" prefHeight="27.0" prefWidth="149.0" />
+            <Label layoutX="257.0" layoutY="220.0" text="Contact No:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="171.0" text="Gender:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="83.0" layoutY="172.0" mnemonicParsing="false" text="Male">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="157.0" layoutY="172.0" mnemonicParsing="false" text="Female" toggleGroup="$gender">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="247.0" layoutY="172.0" mnemonicParsing="false" text="Other" toggleGroup="$gender">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <TextField fx:id="c_num" layoutX="355.0" layoutY="218.0" prefHeight="27.0" prefWidth="160.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Label layoutX="16.0" layoutY="272.0" text="Member:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="92.0" layoutY="273.0" mnemonicParsing="false" text="Student">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="member" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="184.0" layoutY="273.0" mnemonicParsing="false" text="Staff" toggleGroup="$member">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="273.0" layoutY="272.0" text="No. of  Doses:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="386.0" layoutY="273.0" mnemonicParsing="false" text="0">
+               <toggleGroup>
+                  <ToggleGroup fx:id="num_doses" />
+               </toggleGroup>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="434.0" layoutY="273.0" mnemonicParsing="false" text="1" toggleGroup="$num_doses">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="480.0" layoutY="273.0" mnemonicParsing="false" text="2" toggleGroup="$num_doses">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <TextField fx:id="m_name" layoutX="227.0" layoutY="119.0" prefHeight="27.0" prefWidth="120.0" promptText="Middle Name">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <TextField fx:id="l_name" layoutX="349.0" layoutY="119.0" prefHeight="27.0" prefWidth="120.0" promptText="Last Name">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Button layoutX="157.0" layoutY="385.0" mnemonicParsing="false" onAction="#registerOnAction" style="-fx-background-color: #23395d;" text="Register" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="277.0" layoutY="385.0" mnemonicParsing="false" onAction="#goTologinOnAction" style="-fx-background-color: #23395D;" text="Go to Login" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <PasswordField fx:id="password" layoutX="360.0" layoutY="68.0" prefHeight="27.0" prefWidth="155.0">
+               <font>
+                  <Font size="14.0" />
+               </font></PasswordField>
+            <Label fx:id="signup_status" layoutX="40.0" layoutY="355.0" prefHeight="17.0" prefWidth="223.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="branch" layoutX="91.0" layoutY="318.0" prefWidth="150.0" />
+            <Label layoutX="16.0" layoutY="321.0" text="Branch:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="249.0" layoutY="323.0" prefHeight="18.0" prefWidth="110.0" text="(Only for students)">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="username_status" layoutX="15.0" layoutY="98.0" prefHeight="17.0" prefWidth="223.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="pass_status" layoutX="275.0" layoutY="99.0" prefHeight="17.0" prefWidth="223.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="name_status" layoutX="15.0" layoutY="149.0" prefHeight="17.0" prefWidth="223.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="email_status" layoutX="15.0" layoutY="247.0" prefHeight="17.0" prefWidth="223.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="num_status" layoutX="260.0" layoutY="248.0" prefHeight="17.0" prefWidth="223.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="383.0" fitWidth="354.0" layoutX="93.5" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/covid_signup.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

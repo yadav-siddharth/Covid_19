@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="702.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covid_resource.Dashboard_Controller">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="702.0" prefWidth="1400.0" style="-fx-background-color: white;" styleClass="dashboard_back">
+            <children>
+                <AnchorPane prefHeight="702.0" prefWidth="239.0" style="-fx-background-color: #152238;">
+                    <children>
+                        <Button layoutX="11.0" layoutY="583.0" mnemonicParsing="false" onAction="#about_usOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="About Us">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="479.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: #1cb2f5; -fx-background-radius: 0;" text="Helpline Number">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="12.0" layoutY="375.0" mnemonicParsing="false" onAction="#articlesOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Articles/Blogs">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="271.0" mnemonicParsing="false" onAction="#vacc_slotOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Vaccination Slot">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="167.0" mnemonicParsing="false" onAction="#dashboardOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Dashboard">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <Ellipse layoutX="119.0" layoutY="60.0" radiusX="100.0" radiusY="37.0" stroke="BLACK" strokeType="INSIDE">
+                            <fill>
+                                <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                        <Stop color="#d33f3f" />
+                                        <Stop color="#5d9bf0" offset="0.007518796992481203" />
+                                        <Stop color="#46bc58" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </fill>
+                        </Ellipse>
+                        <Label layoutX="50.0" layoutY="36.0" text="SANITIZE ">
+                            <font>
+                                <Font name="Verdana Bold" size="16.0" />
+                            </font>
+                        </Label>
+                  <Label layoutX="96.0" layoutY="57.0" text="YOURSELF !">
+                     <font>
+                        <Font name="Verdana Bold" size="16.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="239.0" prefHeight="702.0" prefWidth="1161.0">
+                    <children>
+                  <AnchorPane layoutX="43.0" layoutY="211.0" prefHeight="238.0" prefWidth="326.0" style="-fx-background-color: #1b1b1b; -fx-background-radius: 30;" />
+                  <AnchorPane layoutX="410.0" layoutY="213.0" prefHeight="257.0" prefWidth="307.0" style="-fx-background-color: #1b1b1b; -fx-background-radius: 30;" />
+                  <AnchorPane layoutX="757.0" layoutY="214.0" prefHeight="229.0" prefWidth="361.0" style="-fx-background-color: #1b1b1b; -fx-background-radius: 30;" />
+                  <AnchorPane layoutX="353.0" layoutY="493.0" prefHeight="173.0" prefWidth="745.0" style="-fx-background-color: #1b1b1b; -fx-background-radius: 30;" />
+                        <Separator orientation="VERTICAL" prefHeight="702.0" prefWidth="4.0" style="-fx-background-color: white;" />
+                  <Label layoutX="63.0" layoutY="19.0" prefHeight="99.0" prefWidth="542.0" text="Helpline Number: " textFill="#cd1919">
+                     <font>
+                        <Font size="72.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="601.0" layoutY="19.0" prefHeight="99.0" prefWidth="499.0" text="020-26127394">
+                     <font>
+                        <Font size="72.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="410.0" layoutY="130.0" prefHeight="57.0" prefWidth="307.0" style="-fx-background-radius: 90;" text="Hospital Details" underline="true">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="59.0" layoutY="234.0" prefHeight="43.0" prefWidth="294.0" style="-fx-background-color: white; -fx-background-radius: 90;" text="Godrej Memorial Hospital">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="435.0" layoutY="234.0" prefHeight="43.0" prefWidth="258.0" style="-fx-background-color: white; -fx-background-radius: 90;" text="Seven Hills Hospital">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="771.0" layoutY="234.0" prefHeight="43.0" prefWidth="333.0" style="-fx-background-color: white; -fx-background-radius: 90;" text="Dr. L H Hiranandani Hospital">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="59.0" layoutY="290.0" prefHeight="107.0" prefWidth="294.0" text="Address: Opposite Godrej Platinum, Eastern Express Hwy, Vikhroli, Mumbai, Maharashtra, 400079." textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="435.0" layoutY="290.0" prefHeight="134.0" prefWidth="234.0" text="Address: Marol Maroshi Rd, Mhavir Nagar, Pandit Dindayala Upadhaya Nagar, Andheri East, Mumbai, Maharashtra, 400059." textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="775.0" layoutY="290.0" prefHeight="106.0" prefWidth="324.0" text="Address: Hillside Rd, Hirarnandani Gardens, Ramabai, Ambedkar Nagar, Powai, Mumbai, Maharashtra, 400076." textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="50.0" layoutY="551.0" prefHeight="57.0" prefWidth="290.0" style="-fx-background-radius: 90;" text="College Details" underline="true">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="474.0" layoutY="501.0" prefHeight="40.0" prefWidth="126.0" text="Website:  " textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="54.0" layoutY="400.0" prefHeight="32.0" prefWidth="144.0" text="Phone Number:" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="198.0" layoutY="400.0" prefHeight="32.0" prefWidth="143.0" text="022-6641 7100" textFill="#0492c2" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="420.0" layoutY="427.0" prefHeight="32.0" prefWidth="137.0" text="Phone Number:" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="557.0" layoutY="427.0" prefHeight="32.0" prefWidth="152.0" text="022-6767 6766" textFill="#0492c2" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="769.0" layoutY="399.0" prefHeight="32.0" prefWidth="163.0" text="Phone Number:" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="920.0" layoutY="399.0" prefHeight="32.0" prefWidth="151.0" text="022-2576 3500" textFill="#0492c2" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="474.0" layoutY="558.0" prefHeight="40.0" prefWidth="126.0" text="Email-Id:" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="367.0" layoutY="614.0" prefHeight="40.0" prefWidth="233.0" text="Contact Numbers:" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="630.0" layoutY="558.0" prefHeight="40.0" prefWidth="293.0" text="gtthampi@gmail.com" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="640.0" layoutY="618.0" prefHeight="40.0" prefWidth="479.0" text="022-2649 5808 , +91-9594696888" textFill="#0492c2" wrapText="true">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink layoutX="634.0" layoutY="497.0" onAction="#opentseclink" text="https://tsec.edu/">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Hyperlink>
+                    </children>
+                </AnchorPane>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

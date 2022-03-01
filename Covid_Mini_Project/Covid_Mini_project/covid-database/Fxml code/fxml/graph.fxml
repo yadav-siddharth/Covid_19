@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covid_resource.Graph_Controller">
+    <children>
+      <AnchorPane layoutX="84.0" layoutY="599.0" prefHeight="94.0" prefWidth="344.0" style="-fx-border-color: black;" />
+      <AnchorPane layoutX="535.0" layoutY="599.0" prefHeight="94.0" prefWidth="388.0" style="-fx-border-color: black;" />
+        <BarChart fx:id="barChart" alternativeColumnFillVisible="true" categoryGap="60.0" legendSide="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" title="COVID-GRAPH" verticalGridLinesVisible="false">
+            <xAxis>
+                <CategoryAxis endMargin="10.0" label="BRANCH" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="1015.0" startMargin="20.0" tickLabelGap="5.0" fx:id="x">
+                    <tickLabelFont>
+                        <Font name="Verdana Bold" size="10.0" />
+                    </tickLabelFont>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor></CategoryAxis>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="y" label="NUMBER OF CASES" prefHeight="500.0" prefWidth="60.0" tickLabelGap="5.0">
+                    <tickLabelFont>
+                        <Font name="Verdana Bold" size="10.0" />
+                    </tickLabelFont>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></NumberAxis>
+            </yAxis>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </BarChart>
+      <Label layoutX="100.0" layoutY="607.0" text="Total Unvaccinated Students:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="635.0" text="Total Partially Vaccinated Students:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="662.0" text="Total Fully Vaccinated Students:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="607.0" text="Total Unvaccinated Staff Members:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="635.0" text="Total Partially Vaccinated Staff Members:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="662.0" text="Total Fully Vaccinated Staff Members:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="std_unvacc_count" layoutX="329.0" layoutY="607.0" text="Label" textFill="#f13e3e">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="std_halfvacc_count" layoutX="372.0" layoutY="635.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="std_fullvacc_count" layoutX="349.0" layoutY="662.0" text="Label" textFill="#1fab39">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="stf_unvacc_count" layoutX="822.0" layoutY="607.0" text="Label" textFill="#f23f3f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="stf_halfvacc_count" layoutX="865.0" layoutY="635.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="stf_fullvacc_count" layoutX="842.0" layoutY="662.0" text="Label" textFill="#1fab39">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</Pane>

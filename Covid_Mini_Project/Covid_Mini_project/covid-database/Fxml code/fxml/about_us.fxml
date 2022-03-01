@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="702.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covid_resource.Dashboard_Controller">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="702.0" prefWidth="1400.0" style="-fx-background-color: white;" styleClass="dashboard_back">
+            <children>
+                <AnchorPane prefHeight="702.0" prefWidth="239.0" style="-fx-background-color: #152238;">
+                    <children>
+                        <Button layoutX="11.0" layoutY="583.0" mnemonicParsing="false" onAction="#about_usOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: #1cb2f5; -fx-background-radius: 0;" text="About Us">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="479.0" mnemonicParsing="false" onAction="#helplineOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Helpline Number">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="12.0" layoutY="375.0" mnemonicParsing="false" onAction="#articlesOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Articles/Blogs">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="271.0" mnemonicParsing="false" onAction="#vacc_slotOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Vaccination Slot">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="167.0" mnemonicParsing="false" onAction="#dashboardOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Dashboard">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <Ellipse layoutX="119.0" layoutY="60.0" radiusX="100.0" radiusY="37.0" stroke="BLACK" strokeType="INSIDE">
+                            <fill>
+                                <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                        <Stop color="#d33f3f" />
+                                        <Stop color="#5dc1f0" offset="0.007518796992481203" />
+                                        <Stop color="#a2ba47" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </fill>
+                        </Ellipse>
+                        <Label layoutX="35.0" layoutY="40.0" text="FOLLOW COVID-19">
+                            <font>
+                                <Font name="Verdana Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="63.0" text="GUIDELINES">
+                            <font>
+                                <Font name="Verdana Bold" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="239.0" prefHeight="702.0" prefWidth="1161.0" style="-fx-background-color: #1b1b1b;">
+                    <children>
+                        <Separator orientation="VERTICAL" prefHeight="702.0" prefWidth="4.0" style="-fx-background-color: white;" />
+                  <ImageView fitHeight="701.0" fitWidth="1153.0" layoutX="6.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/aboutus1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="40.0" layoutY="24.0" prefHeight="74.0" prefWidth="306.0" style="-fx-background-color: white; -fx-background-radius: 90;" text="About Us" underline="true">
+                     <font>
+                        <Font name="Verdana Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="27.0" layoutY="146.0" prefHeight="147.0" prefWidth="291.0" text="Our goal  is to help the college officials keep a track of vaccinated and unvaccinated students and staff members." wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <Label alignment="TOP_LEFT" layoutX="27.0" layoutY="310.0" prefHeight="38.0" prefWidth="305.0" text="Objectives of this project:" underline="true" wrapText="true">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="27.0" layoutY="348.0" prefHeight="66.0" prefWidth="349.0" text="1. Help members book a slot for vaccine." wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="27.0" layoutY="403.0" prefHeight="66.0" prefWidth="349.0" text="2. Keep everyone updated with latest articles/circulars." wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="27.0" layoutY="460.0" prefHeight="66.0" prefWidth="349.0" text="3. Spreading awareness about COVID-19." wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="27.0" layoutY="628.0" prefHeight="36.0" prefWidth="243.0" text="This project is built by - " wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="27.0" layoutY="542.0" prefHeight="66.0" prefWidth="513.0" text="We appreciate your feedback. For any suggestions please contact us at - " wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="255.0" layoutY="570.0" text="xyz@gmail.com" textFill="#0492c2">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="265.0" layoutY="625.0" prefHeight="36.0" prefWidth="489.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Aadi Vora, Siddharth Yadav &amp; Abhishek Shirke" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </AnchorPane>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

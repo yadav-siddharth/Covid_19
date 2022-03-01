@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="702.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covid_resource.Dashboard_Controller">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="702.0" prefWidth="1398.0" style="-fx-background-color: white;" styleClass="dashboard_back">
+            <children>
+                <AnchorPane prefHeight="702.0" prefWidth="239.0" style="-fx-background-color: #152238;">
+                    <children>
+                        <Button layoutX="11.0" layoutY="583.0" mnemonicParsing="false" onAction="#about_usOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="About Us">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="479.0" mnemonicParsing="false" onAction="#helplineOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Helpline Number">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="12.0" layoutY="375.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: #1cb2f5; -fx-background-radius: 0;" text="Articles/Blogs">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="271.0" mnemonicParsing="false" onAction="#vacc_slotOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Vaccination Slot">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="167.0" mnemonicParsing="false" onAction="#dashboardOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Dashboard">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <Ellipse layoutX="119.0" layoutY="60.0" radiusX="100.0" radiusY="37.0" stroke="BLACK" strokeType="INSIDE">
+                            <fill>
+                                <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                        <Stop color="#d33f3f" />
+                                        <Stop color="#ecf05d" offset="0.007518796992481203" />
+                                        <Stop color="#46bc58" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </fill>
+                        </Ellipse>
+                        <Label layoutX="50.0" layoutY="36.0" text="MAINTAIN ">
+                            <font>
+                                <Font name="Verdana Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="96.0" layoutY="57.0" text="DISTANCE !">
+                            <font>
+                                <Font name="Verdana Bold" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            <ScrollPane hbarPolicy="NEVER" layoutX="239.0" pannable="true" prefHeight="702.0" prefWidth="1161.0" vbarPolicy="ALWAYS">
+               <content>
+                  <AnchorPane maxWidth="-Infinity" prefHeight="4580.0" prefWidth="1161.0" style="-fx-background-color: #1c2f2f;">
+                     <children>
+                              <Separator orientation="VERTICAL" prefHeight="4580.0" prefWidth="4.0" style="-fx-background-color: white;" />
+                        <Label alignment="CENTER" layoutX="275.0" layoutY="22.0" prefHeight="51.0" prefWidth="595.0" style="-fx-background-color: WHITE; -fx-background-radius: 90;" text="GOVERNMENT ARTICLES" textFill="#9c6137">
+                           <font>
+                              <Font name="Verdana Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="724.0" fitWidth="506.0" layoutX="603.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/gov_article2.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="830.0" fitWidth="1066.0" layoutX="42.0" layoutY="902.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/gov_article3.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="833.0" fitWidth="1070.0" layoutX="41.0" layoutY="1790.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/gov_article4.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="360.0" layoutY="2740.0" prefHeight="51.0" prefWidth="429.0" style="-fx-background-color: WHITE; -fx-background-radius: 90;" text="OTHER ARTICLES" textFill="#9c6137">
+                           <font>
+                              <Font name="Verdana Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="732.0" fitWidth="520.0" layoutX="40.0" layoutY="2850.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/other_artice1.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="735.0" fitWidth="518.0" layoutX="591.0" layoutY="2850.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/other_article2.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="330.0" layoutY="3700.0" prefHeight="51.0" prefWidth="515.0" style="-fx-background-color: WHITE; -fx-background-radius: 90;" text="COLLEGE CIRCULARS" textFill="#9c6137">
+                           <font>
+                              <Font name="Verdana Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="706.0" fitWidth="519.0" layoutX="40.0" layoutY="3810.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/circular1.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="734.0" fitWidth="518.0" layoutX="589.0" layoutY="3810.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/circular2.jpg" />
+                           </image>
+                        </ImageView>
+                        <Separator layoutY="2681.0" prefWidth="1159.0" />
+                        <Separator layoutY="3640.0" prefWidth="1159.0" />
+                        <ImageView fitHeight="702.0" fitWidth="529.0" layoutX="40.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/gov_article1.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.1742857142857143" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="702.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covid_resource.Dashboard_Controller">
+    <items>
+        <AnchorPane maxHeight="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="115.0" prefWidth="160.0" style="-fx-background-color: #333333;">
+            <children>
+            <Button layoutX="1067.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#accountOnAction" prefHeight="35.0" prefWidth="165.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Account">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Verdana" size="18.0" />
+               </font>
+            </Button>
+                <Button layoutX="1233.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="35.0" prefWidth="165.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Logout">
+                    <font>
+                        <Font name="Verdana" size="18.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Label layoutX="293.0" layoutY="33.0" prefHeight="46.0" prefWidth="267.0" text="DASHBOARD" textFill="#fffcfc">
+                    <font>
+                        <Font name="Verdana Bold" size="36.0" />
+                    </font>
+                </Label>
+                <Ellipse layoutX="136.0" layoutY="57.0" radiusX="116.0" radiusY="37.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#7ba8b8d1" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill></Ellipse>
+                <Label layoutX="50.0" layoutY="33.0" prefHeight="22.0" prefWidth="130.0" text="COVID-19">
+                    <font>
+                        <Font name="Verdana Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="111.0" layoutY="46.0" prefHeight="35.0" prefWidth="124.0" text="RESOURCES">
+                    <font>
+                        <Font name="Verdana Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Circle layoutX="216.0" layoutY="86.0" radius="14.0" stroke="#fffcfc" strokeType="INSIDE">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.8557692307692307" startY="0.16346153846153844">
+                            <stops>
+                                <Stop color="#104578da" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Circle>
+            <Label layoutX="1130.0" layoutY="80.0" prefHeight="29.0" prefWidth="102.0" text="Welcome," textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="user" layoutX="1240.0" layoutY="80.0" prefHeight="29.0" prefWidth="150.0" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            </children></AnchorPane>
+        <AnchorPane maxHeight="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="575.0" prefWidth="1398.0" style="-fx-background-color: white;" styleClass="dashboard_back">
+            <children>
+            <AnchorPane prefHeight="575.0" prefWidth="239.0" style="-fx-background-color: #152238;">
+               <children>
+                      <Button layoutX="11.0" layoutY="462.0" mnemonicParsing="false" onAction="#about_usOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="About Us">
+                          <font>
+                              <Font name="Verdana Bold" size="18.0" />
+                          </font>
+                          <cursor>
+                              <Cursor fx:constant="HAND" />
+                          </cursor>
+                          <effect>
+                              <DropShadow />
+                          </effect>
+                      </Button>
+                      <Button layoutX="11.0" layoutY="358.0" mnemonicParsing="false" onAction="#helplineOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Helpline Number">
+                          <font>
+                              <Font name="Verdana Bold" size="18.0" />
+                          </font>
+                          <cursor>
+                              <Cursor fx:constant="HAND" />
+                          </cursor>
+                          <effect>
+                              <DropShadow />
+                          </effect>
+                      </Button>
+                      <Button layoutX="12.0" layoutY="254.0" mnemonicParsing="false" onAction="#articlesOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Articles/Blogs">
+                          <font>
+                              <Font name="Verdana Bold" size="18.0" />
+                          </font>
+                          <cursor>
+                              <Cursor fx:constant="HAND" />
+                          </cursor>
+                          <effect>
+                              <DropShadow />
+                          </effect>
+                      </Button>
+                      <Button layoutX="11.0" layoutY="150.0" mnemonicParsing="false" onAction="#vacc_slotOnAction" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Vaccination Slot">
+                          <font>
+                              <Font name="Verdana Bold" size="18.0" />
+                          </font>
+                          <cursor>
+                              <Cursor fx:constant="HAND" />
+                          </cursor>
+                          <effect>
+                              <DropShadow />
+                          </effect>
+                      </Button>
+                  <Button layoutX="11.0" layoutY="46.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="216.0" style="-fx-background-color: #1cb2f5; -fx-background-radius: 0;" text="Dashboard">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="Verdana Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="239.0" prefHeight="575.0" prefWidth="1161.0" styleClass="dashboard_background" stylesheets="@../style.css">
+               <children>
+                      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfbab4e2" height="131.0" layoutX="805.0" layoutY="312.0" stroke="BLACK" strokeType="INSIDE" width="279.0" />
+                      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebf0f5" height="35.0" layoutX="824.0" layoutY="365.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                      <Line endX="40.0" layoutX="994.0" layoutY="365.0" startX="-100.0">
+                          <stroke>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.1875">
+                                  <stops>
+                                      <Stop color="#c78989c9" />
+                                      <Stop color="WHITE" offset="1.0" />
+                                  </stops>
+                              </LinearGradient>
+                          </stroke>
+                      </Line>
+                      <Line endX="40.0" layoutX="994.0" layoutY="387.0" startX="-100.0">
+                          <stroke>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.20673076923076922">
+                                  <stops>
+                                      <Stop color="#c78989c1" />
+                                      <Stop color="WHITE" offset="1.0" />
+                                  </stops>
+                              </LinearGradient>
+                          </stroke>
+                      </Line>
+                      <Line endX="40.0" layoutX="994.0" layoutY="409.0" startX="-100.0">
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.20192307692307693">
+                           <stops>
+                              <Stop color="#c78989c1" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Line>
+                      <Text layoutX="846.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" VACCINATION PASS" wrappingWidth="201.0">
+                          <font>
+                              <Font name="Verdana Bold" size="16.0" />
+                          </font>
+                      </Text>
+                      <Line endX="400.0" layoutX="239.0" layoutY="443.0" strokeWidth="3.0" />
+                      <Line endY="400.0" layoutX="236.0" layoutY="43.0" strokeWidth="3.0" />
+                      <Rectangle arcHeight="5.0" arcWidth="5.0" height="370.0" layoutX="297.0" layoutY="73.0" stroke="BLACK" strokeType="INSIDE" width="53.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.9694656615948859" startY="0.5877862449820715">
+                           <stops>
+                              <Stop color="#e5ff1fa4" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <effect>
+                        <Blend />
+                     </effect>
+                      </Rectangle>
+                      <Rectangle arcHeight="5.0" arcWidth="5.0" height="223.0" layoutX="399.0" layoutY="220.0" stroke="BLACK" strokeType="INSIDE" width="53.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#1fff5ac7" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <effect>
+                        <Blend />
+                     </effect>
+                      </Rectangle>
+                      <Rectangle arcHeight="5.0" arcWidth="5.0" height="306.0" layoutX="501.0" layoutY="137.0" stroke="BLACK" strokeType="INSIDE" width="53.0">
+                          <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                  <stops>
+                                      <Stop>
+                                          <color>
+                                              <Color blue="0.11999999731779099" green="0.6773333549499512" opacity="0.6505190134048462" red="1.0" />
+                                          </color>
+                                      </Stop>
+                                      <Stop offset="1.0">
+                                          <color>
+                                              <Color blue="1.0" green="1.0" red="1.0" />
+                                          </color>
+                                      </Stop>
+                                  </stops>
+                              </LinearGradient>
+                          </fill>
+                     <effect>
+                        <Blend />
+                     </effect>
+                      </Rectangle>
+                      <Text layoutX="643.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" wrappingWidth="21.911834716796875">
+                          <font>
+                              <Font name="System Bold" size="24.0" />
+                          </font>
+                      </Text>
+                      <Text layoutX="217.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y">
+                          <font>
+                              <Font name="System Bold" size="24.0" />
+                          </font>
+                      </Text>
+                      <Button layoutX="335.0" layoutY="465.0" mnemonicParsing="false" onAction="#graphOnAction" prefHeight="36.0" prefWidth="196.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Covid-Graph">
+                          <cursor>
+                              <Cursor fx:constant="HAND" />
+                          </cursor>
+                          <effect>
+                              <DropShadow />
+                          </effect>
+                          <font>
+                              <Font name="Verdana Bold" size="18.0" />
+                          </font>
+                      </Button>
+                      <Button layoutX="880.0" layoutY="465.0" mnemonicParsing="false" onAction="#vacc_passOnAction" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="View Pass">
+                          <cursor>
+                              <Cursor fx:constant="HAND" />
+                          </cursor>
+                          <effect>
+                              <DropShadow />
+                          </effect>
+                          <font>
+                              <Font name="Verdana Bold" size="17.0" />
+                          </font>
+                      </Button>
+                      <CubicCurve controlX1="-57.39996337890625" controlX2="98.60009765625" controlY1="-8.0" controlY2="-8.0" endX="98.60003662109375" endY="87.00001525878906" fill="#d7c28c" layoutX="919.0" layoutY="76.0" startX="-57.39996337890625" startY="87.00001525878906" stroke="BLACK" />
+                      <Circle layoutX="940.0" layoutY="63.0" radius="40.0" stroke="BLACK" strokeType="INSIDE">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.9694656615948859" startY="0.5877862449820715">
+                           <stops>
+                              <Stop color="#cfc699df" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Circle>
+                      <Rectangle arcHeight="5.0" arcWidth="5.0" height="54.0" layoutX="868.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="18.0">
+                          <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.9694656615948859" startY="0.5877862449820715">
+                                  <stops>
+                                      <Stop>
+                                          <color>
+                                              <Color blue="0.11999999731779099" green="0.11999999731779099" opacity="0.7404844164848328" red="1.0" />
+                                          </color>
+                                      </Stop>
+                                      <Stop offset="1.0">
+                                          <color>
+                                              <Color blue="1.0" green="1.0" red="1.0" />
+                                          </color>
+                                      </Stop>
+                                  </stops>
+                              </LinearGradient>
+                          </fill>
+                      </Rectangle>
+                      <Circle layoutX="877.0" layoutY="93.0" radius="8.0" stroke="BLACK" strokeType="INSIDE">
+                          <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                  <stops>
+                                      <Stop>
+                                          <color>
+                                              <Color blue="0.11999999731779099" green="0.11999999731779099" opacity="0.892733633518219" red="1.0" />
+                                          </color>
+                                      </Stop>
+                                      <Stop offset="1.0">
+                                          <color>
+                                              <Color blue="1.0" green="1.0" red="1.0" />
+                                          </color>
+                                      </Stop>
+                                  </stops>
+                              </LinearGradient>
+                          </fill>
+                      </Circle>
+                      <Button layoutX="866.0" layoutY="185.0" mnemonicParsing="false" onAction="#ask_doubtOnAction" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Ask a Doubt">
+                          <font>
+                              <Font name="Verdana Bold" size="17.0" />
+                          </font>
+                          <cursor>
+                              <Cursor fx:constant="HAND" />
+                          </cursor>
+                          <effect>
+                              <DropShadow />
+                          </effect>
+                      </Button>
+                      <Separator orientation="VERTICAL" prefHeight="575.0" prefWidth="4.0" style="-fx-background-color: white;" />
+               </children>
+            </AnchorPane>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

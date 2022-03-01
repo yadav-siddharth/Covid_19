@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1045.0" style="-fx-background-color: #63ccc5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covid_resource.Doubt_Controller">
+    <children>
+        <Label alignment="CENTER" layoutX="450.0" layoutY="19.0" prefHeight="54.0" prefWidth="136.0" text="FAQ">
+            <font>
+                <Font name="Verdana Bold" size="36.0" />
+            </font>
+        </Label>
+        <Button fx:id="q1" layoutX="30.0" layoutY="100.0" mnemonicParsing="false" onAction="#doubt1" prefHeight="32.0" prefWidth="206.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="Is COVID-19 worse than flu?">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="q2" layoutX="30.0" layoutY="161.0" mnemonicParsing="false" onAction="#doubt2" prefHeight="32.0" prefWidth="429.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="How does COVID-19 compare to other public health threats?">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="q3" layoutX="30.0" layoutY="221.0" mnemonicParsing="false" onAction="#doubt3" prefHeight="32.0" prefWidth="438.0" style="-fx-background-color: white; -fx-background-radius: 30;" text=" How effective are masks and do they also need to cover my nose?">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="q4" layoutX="30.0" layoutY="282.0" mnemonicParsing="false" onAction="#doubt4" prefHeight="32.0" prefWidth="431.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="Would it be possible to achieve herd immunity without vaccines?">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="q5" layoutX="550.0" layoutY="100.0" mnemonicParsing="false" onAction="#doubt5" prefHeight="32.0" prefWidth="410.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="How can we trust vaccines that have been developed so fast?">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="q6" layoutX="550.0" layoutY="161.0" mnemonicParsing="false" onAction="#doubt6" prefHeight="32.0" prefWidth="243.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="What are the risks of re-infection?">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="q7" layoutX="550.0" layoutY="221.0" mnemonicParsing="false" onAction="#doubt7" prefHeight="32.0" prefWidth="341.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="Is regularly washing hands enough to protect me?">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="q8" layoutX="550.0" layoutY="282.0" mnemonicParsing="false" onAction="#doubt8" prefHeight="32.0" prefWidth="465.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="Do I still need to worry about infection even though I'm fit and healthy?">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Label fx:id="answer" layoutX="30.0" layoutY="360.0" prefHeight="162.0" prefWidth="986.0" style="-fx-background-color: #1b1b1b; -fx-background-radius: 30;" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <TextField fx:id="user_doubt" layoutX="101.0" layoutY="575.0" prefHeight="39.0" prefWidth="842.0" promptText="Type your question" style="-fx-background-color: white; -fx-background-radius: 30;">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font></TextField>
+        <Label layoutX="110.0" layoutY="530.0" prefHeight="34.0" prefWidth="142.0" text="Ask your question:">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="110.0" layoutY="640.0" mnemonicParsing="false" onAction="#post_doubt" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: white;" text="Post">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </Button>
+        <Label fx:id="status" layoutX="211.0" layoutY="635.0" prefHeight="39.0" prefWidth="733.0">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Label>
+      <Label layoutX="759.0" layoutY="332.0" prefHeight="19.0" prefWidth="236.0" text="(Click the question to get an answer)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
