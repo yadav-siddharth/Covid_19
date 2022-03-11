@@ -50,7 +50,7 @@ which they can use to send feedback or even for any suggestions or changes they
 would like us to make.
 
 
-VACCINATIO PASS:
+VACCINATION PASS:
 
 
 There is vaccination pass for students and faculty members which will be 
